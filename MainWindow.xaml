@@ -5,25 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Naznean_Larisa_Lab5"
         mc:Ignorable="d"
-        Title="Phone Subscribers Management" Height="450" Width="800">
-    <Grid x:Name="grdMain">
+        Title="Phone Subscribers Management" Height="450" Width="800" Loaded="frmMain_Loaded">
+    <Grid x:Name="grdMain" Loaded="grdMain_Loaded">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="493*"/>
             <ColumnDefinition Width="307*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnNew" Content="New" HorizontalAlignment="Left" Margin="41,23,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" Margin="41,84,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="36,137,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="203,263,0,0" VerticalAlignment="Top" Click="Button_Click_1" IsEnabled="False"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="400,268,0,0" VerticalAlignment="Top" Click="Button_Click_2" IsEnabled="False"/>
+        <Button x:Name="btnNew" Content="New" HorizontalAlignment="Left" Margin="41,23,0,0" VerticalAlignment="Top" Click="btnNew_Click"/>
+        <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" Margin="41,84,0,0" VerticalAlignment="Top" Click="btnEdit_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="36,137,0,0" VerticalAlignment="Top" Click="btnDelete_Click" />
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="203,263,0,0" VerticalAlignment="Top"  IsEnabled="False" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="400,268,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnCancel_Click"/>
         <ListBox x:Name="lstPhones" Margin="213,23,42,262"/>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="36,203,0,0" VerticalAlignment="Top" Click="Button_Click_3" FontWeight="Bold"/>
-        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="422,184,0,0" VerticalAlignment="Top" Click="Button_Click_4" RenderTransformOrigin="-0.375,1.034"/>
-        <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="203,182,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="36,203,0,0" VerticalAlignment="Top" Click="btnExit_Click" FontWeight="Bold"/>
+        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="422,184,0,0" VerticalAlignment="Top"  RenderTransformOrigin="-0.375,1.034" Click="btnNext_Click"/>
+        <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="203,182,0,0" VerticalAlignment="Top" Click="btnPrevious_Click"/>
         <Label x:Name="lblPhoneNum" Content="PhoneNumber:" HorizontalAlignment="Left" Margin="108,199,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblSubscriber" Content="Subscriber:" HorizontalAlignment="Left" Margin="115,225,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtSubscriber" HorizontalAlignment="Left" Margin="212,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1" IsEnabled="False"/>
-        <TextBox x:Name="txtPhoneNumber" HorizontalAlignment="Left" Margin="213,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_2" IsEnabled="True"/>
+        <TextBox x:Name="txtSubscriber" HorizontalAlignment="Left" Margin="212,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  IsEnabled="False"/>
+        <TextBox x:Name="txtPhoneNumber" HorizontalAlignment="Left" Margin="213,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  IsEnabled="True"/>
 
     </Grid>
 </Window>
