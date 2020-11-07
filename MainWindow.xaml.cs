@@ -248,8 +248,8 @@ MessageBoxImage.Warning) == MessageBoxResult.Yes)
         private void btnPrevious_Click(object sender, RoutedEventArgs e)
         {
             //using System.ComponentModel
-            ICollectionView navigationView = CollectionViewSource.GetDefaultView(phoneNumbersDataSet.PhoneNumbers)
- navigationView.MoveCurrentToPrevious();
+            ICollectionView navigationView = CollectionViewSource.GetDefaultView(phoneNumbersDataSet.PhoneNumbers);
+                navigationView.MoveCurrentToPrevious();
         }
 
         private void btnNext_Click(object sender, RoutedEventArgs e)
